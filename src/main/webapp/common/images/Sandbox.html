@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>position 예제</title>
+  <style>
+    body {
+      height: 2000px; /* 스크롤 생성을 위한 높이 */
+      margin: 0;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .relative-box {
+      background-color: royalblue;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .absolute-container {
+      position: relative; /* absolute 자식의 기준이 됨 */
+      height: 200px;
+      background-color: lightgray;
+    }
+
+    .absolute-box {
+      background-color: crimson;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .fixed-box {
+      background-color: green;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .sticky-box {
+      background-color: orange;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="relative-box box">relative</div>
+
+  <div class="absolute-container">
+    <div class="absolute-box box">absolute</div>
+  </div>
+
+  <div class="fixed-box box">fixed</div>
+
+  <div class="sticky-box box">sticky</div>
+
+  <p style="margin-top: 1000px;">스크롤을 내려보세요.</p>
+
+</body>
+</html>

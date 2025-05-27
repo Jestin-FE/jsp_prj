@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<SAVED_DATA>
+	<bookmarks>
+		<jdbcDriver className="org.apache.derby.jdbc.EmbeddedDriver" name="org.apache.derby.jdbc.EmbeddedDriver" type="DERBY" version="">
+			<jar fileName="C:/Users/user/Desktop/file::/C::/dev/eclipse/plugins/com.quantum.derby_3.3.9.jar!/lib/derby.jar" />
+		</jdbcDriver>
+		<jdbcDriver className="oracle.jdbc.OracleDriver" name="Oracle JDBC driver" type="ORACLE" version="19.3.0.0.0">
+			<jar fileName="C:\dev\drivers\ojdbc8.jar" />
+		</jdbcDriver>
+		<bookmark>
+			<name>(Internal) Derby</name>
+			<username>QUANTUM</username>
+			<password />
+			<prompt>false</prompt>
+			<connect>jdbc:derby:C:/Users/user/Desktop/file::/C::/dev/eclipse/plugins/com.quantum.derby_3.3.9.jar!/data/quantum</connect>
+			<autoCommit>true</autoCommit>
+			<autoCommitPreference>Always True</autoCommitPreference>
+			<autoCommitIgnoreView>false</autoCommitIgnoreView>
+			<quoteAll>false</quoteAll>
+			<sendQueryAsIs>false</sendQueryAsIs>
+			<stripNewline>false</stripNewline>
+			<shutdownOnDisconnect>true</shutdownOnDisconnect>
+			<defaultEncoding />
+			<driver>org.apache.derby.jdbc.EmbeddedDriver</driver>
+			<type>DERBY</type>
+			<substituteVariables>false</substituteVariables>
+			<variablesRegexp>\$\{(.*?)\}</variablesRegexp>
+			<driverLocation>C:/Users/user/Desktop/file::/C::/dev/eclipse/plugins/com.quantum.derby_3.3.9.jar!/lib/derby.jar</driverLocation>
+			<Other_Schemas schemaRule="useAll" />
+			<quickList />
+			<queryList />
+		</bookmark>
+		<bookmark>
+			<name>oracle</name>
+			<username>scott</username>
+			<password>tiger</password>
+			<prompt>false</prompt>
+			<connect>jdbc:oracle:thin:@localhost:1521:orcl</connect>
+			<autoCommit>true</autoCommit>
+			<autoCommitPreference>Always True</autoCommitPreference>
+			<autoCommitIgnoreView>false</autoCommitIgnoreView>
+			<quoteAll>false</quoteAll>
+			<sendQueryAsIs>false</sendQueryAsIs>
+			<stripNewline>false</stripNewline>
+			<shutdownOnDisconnect>false</shutdownOnDisconnect>
+			<defaultEncoding />
+			<driver>oracle.jdbc.OracleDriver</driver>
+			<type>ORACLE</type>
+			<substituteVariables>false</substituteVariables>
+			<variablesRegexp>\$\{(.*?)\}</variablesRegexp>
+			<driverLocation>C:\dev\drivers\ojdbc8.jar</driverLocation>
+			<Other_Schemas schemaRule="useSelected">
+				<schema>SCOTT</schema>
+			</Other_Schemas>
+			<quickList />
+			<queryList>
+				<query>
+					<queryString>INSERT INTO &quot;SCOTT&quot;.&quot;STATEMENT_MEMBER&quot; (NUM, NAME, AGE, GENDER, TEL ) VALUES  ( seq_stmt.nextval, '강태오', 30, '남자', '010-1234-5433' )</queryString>
+				</query>
+				<query>
+					<queryString>DROP TABLE &quot;SCOTT&quot;.&quot;STATEMENT_MEMBER&quot; </queryString>
+				</query>
+				<query>
+					<queryString>insert into statement_member(num,name,age,gender,tel)values(seq_stmt.nextval, '테스트',20,'남자','010-1111-111')</queryString>
+				</query>
+				<query>
+					<queryString>UPDATE &quot;SCOTT&quot;.&quot;SITE_PROPERTY&quot; SET SITE_NAME = '개발용 사이트' WHERE (SITE_NAME = '쌍용교육센터')</queryString>
+				</query>
+				<query>
+					<queryString>UPDATE &quot;SCOTT&quot;.&quot;SITE_PROPERTY&quot; SET SITE_NAME = '연습용 사이트' WHERE (SITE_NAME = '개발용 사이트')</queryString>
+				</query>
+				<query>
+					<queryString>UPDATE &quot;SCOTT&quot;.&quot;SITE_PROPERTY&quot; SET SITE_NAME = '개발용 사이트' WHERE (SITE_NAME = '연습용 사이트')</queryString>
+				</query>
+			</queryList>
+		</bookmark>
+	</bookmarks>
+</SAVED_DATA>
