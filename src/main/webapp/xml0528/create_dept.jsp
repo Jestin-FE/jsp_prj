@@ -8,7 +8,6 @@ if (flag == null) {
 	cdXML.webBrowserOutput(out);
 } else {
 	cdXML.createDeptFile();
-	충!돌
 %>
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
