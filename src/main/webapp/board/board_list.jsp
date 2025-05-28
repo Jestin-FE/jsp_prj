@@ -102,8 +102,13 @@ session.setAttribute("cntFlag", true);
 끝번호 : ${endNum}<br> --%>
 <div style="text-align: right;">
 <a href="write_frm.jsp" class="btn btn-info btn-sm">글작성</a>
-
 </div>
+
+
+
+
+
+
 
 
 <table class="table table-hover">
@@ -148,6 +153,13 @@ pageContext.setAttribute("queryStr", searchQueryString);
 </tbody>
 </table>
 </div>
+
+
+
+
+
+
+
 <div id="searchDiv" style="text-align: center;">
 <form action="board_list.jsp" id="searchFrm" method="get">
 <select name = "field" id="field">

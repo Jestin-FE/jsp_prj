@@ -31,7 +31,7 @@ public class BoardUtil {
 		// 3. 화면에 보여줄 마지막 번호
 		int endPage = (((startPage - 1)+pDTO.getPageNumber())/pDTO.getPageNumber()) * pDTO.getPageNumber();
 		// 4. 총 페이지 수가 연산된 마지막 페이지 수보다 작다면 총 페이지 수가 마지막 페이지 수로 설정.
-		if (pDTO.getTotalPage() <= endPage) {
+		if (pDTO.getTotalPage() < endPage) {
 			endPage=pDTO.getTotalPage();
 		} // end if
 		
@@ -51,6 +51,7 @@ public class BoardUtil {
 		
 		
 		// 6. 시작 페이지 번호부터 끝 페이지 번호까지 화면에 출력
+		// 현재 페이지는 강조 표시, 다른 페이지는 링크 처리.
 		movePage = startPage;
 		StringBuilder pageLink = new StringBuilder();
 		while (movePage <= endPage) {  // 

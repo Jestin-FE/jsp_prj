@@ -268,8 +268,8 @@ public class BoardDAO {
 		
 		DbConnection db = DbConnection.getInstance();
 		
-		PreparedStatement pstmt = null;
 		Connection con = null;
+		PreparedStatement pstmt = null;
 		try {
 		// 1. JNDI 사용객체 생성
 		// 2. DBCP에서 연결객체 얻기(DataSource)
@@ -299,8 +299,8 @@ public class BoardDAO {
 		
 		DbConnection db = DbConnection.getInstance();
 		
-		PreparedStatement pstmt = null;
 		Connection con = null;
+		PreparedStatement pstmt = null;
 		try {
 		// 1. JNDI 사용객체 생성
 		// 2. DBCP에서 연결객체 얻기(DataSource)
@@ -327,7 +327,7 @@ public class BoardDAO {
 		return rowCnt;
 	} // deleteBoard
 	
-	public int updateBoard(BoardDTO bDTO) throws SQLException{
+	public int updateBoard(BoardDTO bDTO) throws SQLException {
 		int updatedRowCnt=0;//행 수 반환
 		
 		DbConnection db = DbConnection.getInstance();
@@ -340,8 +340,8 @@ public class BoardDAO {
 		//3. 커넥션얻기
 			con=db.getDbConn();
 		//4. 쿼리문생성객체 얻기
-			StringBuilder deleteBoard = new StringBuilder();
-			deleteBoard
+			StringBuilder updateBoard = new StringBuilder();
+			updateBoard
 			.append("	update	board				")
 			.append("	set	content=?				")
 			.append("	where	num=?	and	id=?	")
@@ -352,7 +352,7 @@ public class BoardDAO {
 			values(seq_board.nextval, '오늘은 월요일16','피곤스16','lee12345','192.168.10.88');
 			*/ 
 			
-			pstmt=con.prepareStatement(deleteBoard.toString());
+			pstmt=con.prepareStatement(updateBoard.toString());
 			
 
 		//5. 바인드변수에 값할당하기
